@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -11,6 +14,56 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.bgPurple {
+  background-color: #a16ae8;
+}
+
+.maxHeight {
+  min-height: 100vh;
+}
+
+.innerHome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.innerHome h1 {
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #612ba8;
+}
+
+.innerHome h2 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.innerHome h1 span {
+  font-size: 90px;
+  color: #441680;
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: column;
 }
