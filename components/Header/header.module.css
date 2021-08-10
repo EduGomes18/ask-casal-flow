@@ -1,0 +1,41 @@
+.container {
+  height: 105px;
+  justify-content: center;
+}
+
+.headerInner {
+  max-width: 1920px;
+  padding: 0 100px;
+  align-items: center;
+}
+
+.headerInner h1,
+.headerInner h2,
+.headerInner h3 {
+  line-height: 1.2;
+  color: #441680;
+  font-weight: 600;
+}
+
+.tieCont {
+  height: 132px;
+  background: #ffffff;
+}
+
+.menuBox {
+  display: flex;
+}
+
+@media (max-width: 1440px) {
+  .headerInner {
+    max-width: 1920px;
+    padding: 0 22px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .headerInner {
+    padding: 0;
+  }
+}

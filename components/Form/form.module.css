@@ -81,3 +81,19 @@
   cursor: pointer;
   transform: translateY(4px);
 }
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 40px 26px 34px 26px;
+  }
+  .container h3 {
+    font-size: 30px;
+  }
+  .btnCont {
+    font-size: 20px;
+    height: 34px;
+  }
+  .inputCont {
+    font-size: 14px;
+  }
+}

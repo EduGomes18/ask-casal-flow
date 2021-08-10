@@ -1,12 +1,14 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -20,6 +22,10 @@ a {
   justify-content: center;
 }
 
+.col {
+  flex-direction: column;
+}
+
 .box {
   display: flex;
   width: 100%;
@@ -29,8 +35,18 @@ a {
   max-width: 1200px;
 }
 
+.boxRow {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
 .bgPurple {
   background-color: #a16ae8;
+}
+
+.bgGray {
+  background-color: #eeeeee;
 }
 
 .maxHeight {
@@ -47,6 +63,7 @@ a {
 .innerHome h1 {
   font-size: 70px;
   font-weight: 600;
+  line-height: 1.1;
   letter-spacing: 0px;
   color: #612ba8;
 }
@@ -64,6 +81,45 @@ a {
 }
 
 .titleBox {
+  padding-right: 40px;
   display: flex;
   flex-direction: column;
+}
+
+.d-flex-100 {
+  display: flex;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .box {
+    padding: 0 22px;
+  }
+
+  .innerHome {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .innerHome h1 {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .innerHome h1 span {
+    font-size: 40px;
+    color: #441680;
+    line-height: 1;
+  }
+
+  .innerHome h2 {
+    margin-bottom: 50px;
+    font-size: 20px;
+    margin-top: 0;
+  }
 }
