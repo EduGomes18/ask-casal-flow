@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import styles from "./header.module.css"
 import Image from "next/image"
+import Link from "next/link"
 const Header: React.FC = () => {
+  const [show, setShow] = useState(false);
+
+  const handleShow = useCallback(()=>{
+    setShow(!show);
+  },[show])
+
   return (
     <>
     <div className={`d-flex-100 ${styles.container}`}>
@@ -10,8 +17,20 @@ const Header: React.FC = () => {
 
       <div className={`${styles.menuBox}`}>
         <div className={`${styles.notification}`}>
-          {/* <Image width="" alt="Notificações" src={"/icons/notification.png"} /> */}
+          <Image width="20" height="20" alt="Notificações" src={"/icons/bell.png"} />
+        </div>
 
+        <div onClick={handleShow}  className={styles.avatar}>
+          <Image width="70" height="70" alt="Avatar" src={"/icons/avatar.png"} />
+        </div>
+
+        <div className={`${styles.menu} ${show ? `d-flex ${styles.show}` : "none"}`}>
+            <Link href="/profile">
+              <a>Perfil</a>
+            </Link>
+            
+            <span>Sair</span>
+          
         </div>
       </div>
 
